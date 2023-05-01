@@ -10,7 +10,8 @@ export default function Intro() {
     "MR ROBOT.png",
     "ENRON.png",
     "boyish.png",
-    "minty.png",
+    "Favicon.png",
+    "Unown.png",
     "Eva.png"
   ];
 
