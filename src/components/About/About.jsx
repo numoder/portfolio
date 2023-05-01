@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, Row, Col, Image } from "../../utilis/Bootstrap.jsx";
+import { Container, Row, Col, Image } from "../../util/Bootstrap.jsx";
 
 export default function About() {
   const[imageIndex, setImageIndex] = useState(0);
@@ -25,7 +25,7 @@ export default function About() {
       <Row className="justify-content-center">
         <Col xs={8} md={5} lg={3}>
           <Image src={`${process.env.PUBLIC_URL}/images/${imageArray[imageIndex]}`}
-            alt="Jiho Sohn"            
+            alt="Anthony Murphy"            
             className="button-effect border-style"
             fluid
             style={{"cursor":"zoom-in"}}

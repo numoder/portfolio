@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "../../utilis/Bootstrap.jsx";
+import { Container, Row, Col } from "../../util/Bootstrap.jsx";
 import Panel from "./Panel.jsx";
 import data from "../../data/portfolio.json";
 

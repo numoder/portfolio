@@ -1,4 +1,4 @@
-import { Image } from "../../utilis/Bootstrap.jsx";
+import { Image } from "../../util/Bootstrap.jsx";
 
 export default function EasterEgg( {iconName} ) {
 
