@@ -33,15 +33,13 @@ export default function Intro() {
               alt="Anthony Murphy"
               className="button-effect"
               fluid
-              style={{"cursor":"zoom-in"}}
               onClick={() => setIntroImage(introImage+1)} />
           </Col>
 
           <Col 
             md={{ span: 5, offset: 4 }} 
             lg={{ span: 5, offset: 4 }} 
-            // xl={{span : 3, offset: 3 }}
-            xl={4}
+            xl={{span : 3, offset: 3 }}
             className="p-1">
               <h1><span>Hello, my name is</span> Anthony Murphy</h1>
               <p>I'm a software Engineer based in South Florida! I'm a fullstack developer but I especially love frontend work! When I'm not coding, I'm looking at the latest fashion shows and gaming.</p>

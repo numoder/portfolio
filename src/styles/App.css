@@ -112,99 +112,255 @@ h2 span {
 }
 
 .portfolio-panel figure img:hover {
-  filter: brightness(1.0);
-  transform: scale(1.3);
-  transition: 
-    transform 1.1s ease-in-out, 
-    filter 0.6s ease-in-out;
-}
-
-.portfolio-panel button, 
-.portfolio-panel .icon img {
-  height: 35px;
-}
-
-.portfolio-panel .icon img  {
-  display: inline-block;
-  filter: brightness(0.6);
-  aspect-ratio: 1 / 1;
-  background-color: transparent;
-  border: 0;
-}
-
-#portfolio .button-effect {
-  color: rgba(183, 177, 177, 0.444);
-  display: block;
-  transform: scale(1.0);
-  transition: 0.6s ease-in-out;
-}
-
-#portfolio .button-effect:hover {
-  color: rgba(255, 255, 255, 0.876);
-  transform: scale(1.1);
-  filter: drop-shadow(0 0 20px rgba(0, 5, 9, 0.919));
-  z-index: 999;
-}
-
-/* Disable hover effects on mobile */
-@media (max-width: 768px) {
-  #portfolio .button-effect:hover
-  {
-      transform: scale(1.0);
-      filter: none;
+  :root {
+    --color-dark: #13203d;
+    --color-darkest: #0c1c2c;
+    --color-dark-mid: #0d4c6b70;
+  
+    --color-light: #f4f5f6;
+    --color-highlight: #5eedcf;
+    --color-highlight-neon: #ed2af1;
+    --color-highlight-base: #e0c705;
+  
+    --border-radius: 13px;
+  }
+  .body {
+    background-color: var(--color-darkest);  
+  }
+  
+  .p {
+    text-shadow: 2px 2px 5px #030303;
   }
 }
-
-#skills img { width: 10%; }
-
-#three-things a.easter-egg  {
-  cursor: url("/public/cursor/bulbasaur.cur"), auto;
-  text-decoration: none;
-}
-
-#skills a.easter-egg  {
-  cursor: url("/public/cursor/volcarona.cur"), auto;
-  text-decoration: none;
-}
-
-.border-style {
-  border: 7px solid var(--color-dark-mid);
-  border-radius: var(--border-radius);
-}
-
-.button-style {
-  background-image: linear-gradient(72deg, var(--color-highlight-neon), var(--color-highlight-base));
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-  border: 1px solid var(--color-highlight-neon);
-}
-
-
-
-
-
-
-
-.button-effect {
-  display: block;
-  transform: scale(1.0);
-  transition: transform 0.23s ease-in-out;
-}
-
-.button-effect:hover {
-  transform: scale(1.13);
-  filter: drop-shadow(0 0 20px rgba(0, 5, 9, 0.919));
-  z-index: 999;
-}
-
-/* Disable hover effects on mobile */
-@media (max-width: 768px) {
-  .button-effect:hover
-  {
-      transform: scale(1.0);
-      filter: none;
+  
+  /* Main */
+  .top-scene-container,
+  .bottom-scene-container  {
+    background-color: rgba(0, 0, 0, 0.53);
+    background-image: url("/public/images/cyberpunk.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  
+    background-blend-mode: color;
   }
-}
+  
+  main .about-col {
+    margin-top: 10vh;  
+  }
+  
+  main h1 {
+    background-image: linear-gradient(72deg, var(--color-highlight-neon), var(--color-highlight-base));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  main h1 span {
+    color: var(--color-highlight);
+    display: block;
+  }
+  
+  main p  {
+    color: var(--color-light);
+  }
+  
+  
+  
+  #three-things {
+    background-color: rgba(12, 4, 23, 0.713);
+    box-shadow: inset 0px 50px 60px rgba(10, 9, 3, 0.117);
+    text-align: center;
+    color: var(--color-light);
+  }
+  
+  #three-things .icon {
+    font-size: calc(3.5rem + 4vw);
+  }
+  
+  #three-things h3 {
+    color: var(--color-highlight);
+  }
+  
+  #three-things a.easter-egg  {
+    cursor: url("/public/cursor/bulbasaur.cur"), auto;
+  }
+  
+  #three-things .easter-egg-2  {
+    cursor: url("/public/cursor/blastoise.cur"), auto;
+  }
+
+  #three-things .easter-egg-3  {
+    cursor: url("/public/cursor/clickme.cur"), auto;
+  }
+  
+  
+  /* Gallery Container */
+  #portfolio {
+    cursor: pointer;
+  }
+  
+  h2 {
+    background-image: linear-gradient(72deg, var(--color-highlight-neon), var(--color-highlight-base));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    margin-top: 2.1rem;
+    margin-bottom: 2.8rem;
+  }
+  
+  h2 span {
+    display: block;
+    font-size: 60%;
+    font-weight: 500;
+  }
+  
+  .portfolio-panel {
+    border:0;
+    transition: filter 0.6s ease-in-out;
+    background-color: var(--color-dark);
+  }
+  
+  .portfolio-panel .card-img {
+    border-radius: 0;
+  }
+  
+  .portfolio-panel .content {
+    padding: 20px;
+  }
+  
+  .portfolio-panel figure { overflow: hidden; }
+  
+  .portfolio-panel figure img {
+    filter: brightness(0.64);
+    transition: 
+      transform 1.1s ease-in-out, 
+      filter 0.6s ease-in-out;
+  }
+  
+  .portfolio-panel figure img:hover {
+    filter: brightness(1.0);
+    transform: scale(1.3);
+    transition: 
+      transform 1.1s ease-in-out, 
+      filter 0.6s ease-in-out;
+  }
+  
+  .portfolio-panel button, 
+  .portfolio-panel .icon img {
+    height: 35px;
+  }
+  
+  .portfolio-panel .icon img  {
+    display: inline-block;
+    filter: brightness(0.6);
+    aspect-ratio: 1 / 1;
+    background-color: transparent;
+    border: 0;
+  }
+  
+  #portfolio .button-effect {
+    color: rgba(183, 177, 177, 0.444);
+    display: block;
+    transform: scale(1.0);
+    transition: 0.6s ease-in-out;
+  }
+  
+  #portfolio .button-effect:hover {
+    color: rgba(255, 255, 255, 0.876);
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 20px rgba(0, 5, 9, 0.919));
+    z-index: 999;
+  }
+  
+  /* Disable hover effects on mobile */
+  @media (max-width: 768px) {
+    #portfolio .button-effect:hover
+    {
+        transform: scale(1.0);
+        filter: none;
+    }
+  }
+  
+  
+  #skills {
+    background-color: rgba(19, 1, 29, 0.402);
+  }
+  
+  #skills img { 
+    width: 10%;
+  }
+  
+  #skills a.easter-egg  {
+    cursor: url("/public/cursor/volcarona.cur"), auto;
+  }
+  
+  #social {
+    max-width: 550px;
+  }
+  
+  #social img {
+    width: clamp(70px, 4vw, 90px);
+    display: "inline-block";
+    filter: invert(0);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  
+  }
+  
+  .border-style {
+    border: 7px solid var(--color-dark-mid);
+    border-radius: var(--border-radius);
+  }
+  
+  .button-style {
+    background-image: linear-gradient(72deg, var(--color-highlight-neon), var(--color-highlight-base));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    border: 1px solid var(--color-highlight-neon);
+  }
+  
+  
+  
+  .button-effect {
+    display: block;
+    transform: scale(1.0);
+    transition: transform 0.23s ease-in-out;
+  }
+  
+  .button-effect:hover {
+    transform: scale(1.13);
+    filter: drop-shadow(0 0 20px rgba(0, 5, 9, 0.919));
+    z-index: 999;
+  }
+  
+  /* Disable hover effects on mobile */
+  @media (max-width: 768px) {
+    .button-effect:hover
+    {
+        transform: scale(1.0);
+        filter: none;
+    }
+  }
+  
+  #mozarts-ghost {
+    position: fixed;
+    opacity: 1;
+    bottom: 0;
+    left: 10px;
+    padding: 10px;
+  }
+  
+  #mozarts-ghost a:link,
+  #mozarts-ghost a:visited {
+    color: rgb(164, 164, 235);
+    text-decoration: none;
+  }
+  
+  #mozarts-ghost a:hover {
+    color: rgb(195, 0, 255);
+  }
