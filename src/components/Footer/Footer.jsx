@@ -2,7 +2,6 @@ import { Container, Row, Col } from "../../util/Bootstrap.jsx";
 import { Github } from "react-bootstrap-icons";
 
 export default function Footer() {
-
   const githubUrl = "https://github.com/AnthonyM04/portfolio";
   const currentYear = new Date().getFullYear();
 

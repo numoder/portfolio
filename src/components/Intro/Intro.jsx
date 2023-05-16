@@ -37,7 +37,7 @@ export default function Intro() {
           </Col>
 
           <Col 
-            md={{ span: 6, offset: 4 }} 
+            md={{ span: 6, offset: 1 }} 
             lg={{ span: 5, offset: 4 }} 
             xl={{ span: 4, offset: 3 }}
             className="p-1">

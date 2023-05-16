@@ -1,8 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import Main from "./scenes/Main.jsx"
+import './components/style/App.scss'
 import "bootstrap/dist/css/bootstrap.min.css";
-import './styles/App.css';
-
 
 function App() {
   return (
