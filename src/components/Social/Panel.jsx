@@ -7,7 +7,7 @@ export default function Panel ({element: {title, name, url}}) {
       href={url} 
       target="_blank" 
       rel="noreferrer"><Image
-        src={`${process.env.PUBLIC_URL}/social/circle/${name}.svg`}
+        src={`${process.env.PUBLIC_URL}/social/logo/${name}.svg`}
         className="button-effect" /></a></Col>
   );    
 }

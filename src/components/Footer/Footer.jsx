@@ -16,14 +16,13 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
               className="button-effect">
-            <Github size="40" color="grey" />
-            <br /><small>Code in GitHub</small>
+            <Github size="40" color="white" />
+            <br /><small>Code in GitHub</small> 
             </a>
             <small>&copy; {currentYear}</small></p>
           </Col>
         </Row>
       </Container>
     </footer>
-
   )
 }

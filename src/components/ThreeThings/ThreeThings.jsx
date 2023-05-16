@@ -18,18 +18,19 @@ export default function ThreeThings() {
           </Col>
 
           <Col sm={8} lg={3}>
-            <p className="icon"><a href="https://system-overload-solution.web.app/" 
+            <p className="icon"><a
+            // href="https://system-overload-solution.web.app/" 
               target="_blank" 
               rel="noreferrer" 
-              class="easter-egg">✍️</a></p>
-            <h3 className="text-center">Rocket to<span className="d-md-block">The Moon</span></h3>
-            <p className="text-center text-md-start">With 20+ years in tech, I have found that motivating our team to excel is like launching a rocket ship - challenging, but incredibly rewarding!</p>
+              >✍️</a></p>
+            <h3 className="text-center">Rocket to <span className="d-md-block">The Moon</span></h3>
+            <p className="text-center text-md-start"></p>
           </Col>
 
           <Col sm={8} lg={3}>
-            <p className="icon">🥪</p>
-            <h3 className="text-center">Functionality <span className="d-md-block">+ Design</span></h3>
-            <p className="text-center text-md-start">Combining tech and design is my jam - like PB&J. I strive to create a seamless, irresistible experience for users whilst keeping things toasty and fresh.</p>
+            <p className="icon">🖼️</p>
+            <h3 className="text-center">Diverse Skill Set<span className="d-md-block">+ Design</span></h3>
+            <p className="text-center text-md-start">With my background in software engineering and graphic design, I offer a unique skill set that combines technical expertise with artistic creativity. This allows me to approach UX/UI design from a holistic perspective, considering both the technical feasibility and visual appeal of the interfaces I create.</p>
           </Col>
 
         </Row>
