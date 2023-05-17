@@ -12,13 +12,15 @@ export default function Main () {
     <>
       <div className="top-scene-container">
         <Intro />
-      <Portfolio />
-      </div>
         <TwoThings />
+        <Portfolio />
+      </div>
       <Skill />
       <About />
-      <Social />
-      <Footer />
+      <div className="bottom-scene-container">
+        <Social />
+        <Footer />
+      </div>
     </>
   )
 }

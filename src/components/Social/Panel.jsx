@@ -8,6 +8,6 @@ export default function Panel ({element: {title, name, url}}) {
       target="_blank" 
       rel="noreferrer"><Image
         src={`${process.env.PUBLIC_URL}/social/logo/${name}.svg`}
-        className="button-effect" /></a></Col>
+        className="button-2" /></a></Col>
   );    
 }

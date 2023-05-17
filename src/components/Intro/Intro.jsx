@@ -12,6 +12,7 @@ export default function Intro() {
     "boyish.png",
     "Unown.png",
     "Eva.png",
+    "Cyber.png",
     "Favicon.png"
   ];
 
@@ -25,20 +26,20 @@ export default function Intro() {
         <Row className="d-flex align-items-center justify-content-center">
           {/* IMAGE */}
           <Col 
-            md={{ span: 6, offset: 0 }} 
-            lg={{ span: 2, offset: 2 }} 
+            md={{ span: 5, offset: 0 }} 
+            lg={{ span: 3, offset: 2 }} 
             xl={{ span: 3, offset: 1 }} 
             className="p-1">
-            <Image src={`${process.env.PUBLIC_URL}/images/intro-images/${introArray[introImage]}`}
+            <Image src={`${process.env.PUBLIC_URL}/img/icons/${introArray[introImage]}`}
               alt="Anthony Murphy"
-              className="button-effect easter-egg"
+              className="easter-egg"
               fluid
               onClick={() => setIntroImage(introImage+1)} />
           </Col>
 
           <Col 
             md={{ span: 6, offset: 1 }} 
-            lg={{ span: 5, offset: 4 }} 
+            lg={{ span: 5, offset: 1 }} 
             xl={{ span: 4, offset: 3 }}
             className="p-1">
               <h1 className=""><span>Hello, my name is</span> Anthony Murphy</h1>
@@ -46,7 +47,7 @@ export default function Intro() {
               <HashLink to="/#portfolio" style={{"textDecoration":"none"}}><Button 
                 size="lg" 
                 variant="outline-danger" 
-                className="button-style button-effect">See Portfolio</Button></HashLink>
+                className="glow-on-hover">See Portfolio</Button></HashLink>
           </Col>
         </Row>
       </Container>

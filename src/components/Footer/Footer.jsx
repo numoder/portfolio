@@ -7,7 +7,7 @@ export default function Footer() {
 
   return (
     <footer>
-      <Container id="portfolio" className="p-5">
+      <Container id="footer" className="p-5">
         <Row>
           <Col>
           <p className="text-center text-secondary">
@@ -18,7 +18,7 @@ export default function Footer() {
             <Github size="40" color="white" />
             <br /><small>Code in GitHub</small> 
             </a>
-            <small>&copy; {currentYear}</small></p>
+            <small> &copy; {currentYear}</small></p>
           </Col>
         </Row>
       </Container>

@@ -10,10 +10,10 @@
 
   {
     "id": 2,
-    "name": "BlueNight in Seoul ",
-    "about": "We used JavaScript, HTML, and CSS in Week 4 of our BocaCode program (C-10) to create a clock that displays the current time in Seoul, Korea.",
-    "website": "https://jsohndata.github.io/bluenight-in-seoul",
-    "cover": "port-bluenight.webp",
+    "name": "Beau Cafe ",
+    "about": "On the fourth week of Boca Code, we would each make a coffee website. It would pull the coffee from an example api!",
+    "website": "https://amurphy-coffee-react.web.app/",
+    "cover": "port-2.webp",
     "skill": ["HTML", "JavaScript", "CSS"]
   },
 

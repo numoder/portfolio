@@ -1,6 +1,6 @@
 import { Image } from "../../util/Bootstrap.jsx";
 
-export default function EasterEgg( {iconName} ) {
+export default function EasterEgg( {name,id} ) {
 
   return (
     <a
@@ -9,11 +9,11 @@ export default function EasterEgg( {iconName} ) {
       className="easter-egg"
       rel="noreferrer">
         <Image 
-          src={`${process.env.PUBLIC_URL}/icons/${iconName}.svg`}
+          key={id}
+          src={`${process.env.PUBLIC_URL}/icons/${name}.svg`}
           fluid
-          className="button-effect"
+          className="glow-on-hover"
           style={{display: "inline-block", width: "100px"}} />
     </a>
   )
-
 }

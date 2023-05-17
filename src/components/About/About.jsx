@@ -1,26 +1,38 @@
 import { Container, Row, Col, Image } from "../../util/Bootstrap.jsx";
+import GlowOnHover from "../Elements/GlowOnHover.jsx";
 
 export default function About() {
-
   return (
-    <Container id="about" className="p-5">
+    <Container fluid id="about" className="p-5">
       <Row>
         <Col>
-          <h2 className="text-center">About <span>A Contrarian's Perspective on Life.</span></h2>
+          <h2 className="text-center">About <span>a new tech </span></h2>
         </Col>
       </Row>
 
       <Row className="justify-content-center">
-        <Col xs={8} md={5} lg={3}>
-          <Image src={`${process.env.PUBLIC_URL}/images/Anthony.jpg`}
+        <Col xs={8} md={6} lg={4} xl={3}>
+          <Image src={`${process.env.PUBLIC_URL}/img/Anthony.jpg`}
+            fluid
             alt="Anthony Murphy"            
-            className="button-effect border-style"
-            // style={{"cursor":"waiting"}}
-            fluid/>
+            className="button-effect border-style mb-4"
+            style={{"cursor":"zoom-in"}}/>
         </Col>
 
-        <Col md={8} lg={6}  className="text-white">
-        <p>h</p>
+        <Col lg={8} zclassName="text-white">
+          <p>p1</p>
+          <p>p2</p>
+          <p>p3</p>
+        </Col>
+      </Row>
+
+      <Row>        
+        <Col className="text-center">
+          <a href="https://www.linkedin.com/in/anthonymurphy-04/"
+          target="_blank"
+          rel="noreferrer">
+            <GlowOnHover text={"Connect on Linkedin"} />
+          </a>
         </Col>
       </Row>
     </Container>

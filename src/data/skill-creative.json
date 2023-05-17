@@ -1,21 +1,31 @@
 [
   {
     "id": 1, 
-    "name": "figma"
+    "name": "photoshop",
+    "link": "https://adobe.com/photoshop"
   },
 
   {
     "id": 2, 
-    "name": "photoshop"
+    "name": "illustrator",
+    "link": "adobe.com/illustrator"
   },
 
   {
     "id": 3, 
-    "name": "illustrator"
+    "name": "lightroom",
+    "link": "adobe.com"
   },
 
   {
-    "id": 4, 
-    "name": "lightroom"
-  }  
+    "id": 4,
+    "name": "indesign",
+    "link": "adobe.com"
+  },
+
+  {
+    "id": 1, 
+    "name": "figma",
+    "link": "https://figma.com"
+  }
 ]

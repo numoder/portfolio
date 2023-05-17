@@ -13,7 +13,7 @@ export default function List () {
               <span><q>...make sure you're connected, The writing's on the wall.</q></span></h2>
           </Col>
         </Row>
-      
+        
         <Row className="justify-content-center">
           {
             data.map(

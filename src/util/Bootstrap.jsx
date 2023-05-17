@@ -10,5 +10,4 @@ import Accordion from "react-bootstrap/Accordion";
 import ListGroup from "react-bootstrap/ListGroup";
 import Tooltip from "react-bootstrap/Tooltip";
 
-export { Container, Row, Col, Button, Image, 
-  Card, Nav, Navbar, Accordion, ListGroup, Tooltip };
+export { Container, Row, Col, Button, Image, Card, Nav, Navbar, Accordion, ListGroup, Tooltip };
