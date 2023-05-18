@@ -8,7 +8,7 @@ export default function List () {
     <Container fluid id="portfolio">
       <Row className="portfolio-text">
         <Col>
-          <h2 className="text-center ">Portfolio <span>Where creativity and code collide.</span></h2>
+          <h2 className="text-center headers">Portfolio <span>Where creativity and code collide.</span></h2>
         </Col>
       </Row>
 

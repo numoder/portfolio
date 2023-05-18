@@ -1,0 +1,78 @@
+/* COOL BUTTON */
+
+.glow-on-hover {
+    border-radius: var(--border-radius);
+    position: relative;
+    background: #111;
+    font-size: 24px;
+    padding: 8px;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border: none;
+    z-index: 0;
+}
+
+.glow-on-hover:before {
+    background: var(--gradient-rainbow);
+    background-size: 400%;
+    position: absolute;
+    content: '';
+    top: -2px;
+    left:-2px;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: var(--border-radius);
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    border-radius: 10px;
+    background: #111;
+    position: absolute;
+    content: '';
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+
+#portfolio .glow-on-hover {
+    border-radius: 3px;
+    color: red($color: #000000);
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+#portfolio .button-effect {
+    color: rgba(183, 177, 177, 0.444);
+    display: block;
+    transform: scale(1.0);
+    transition: 0.6s ease-in-out;
+}
+
+#portfolio .button-effect:hover {
+    color: rgba(255, 255, 255, 0.876);
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 20px rgba(0, 5, 9, 0.919));
+    z-index: 999;
+}
+

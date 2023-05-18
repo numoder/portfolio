@@ -17,6 +17,12 @@ h1 {
 h2 {
   font-size: clamp(2.5rem, 4vw, 3.2rem);
   font-weight: 700;
+  & span {
+    display: block;
+    font-size: 60%;
+    font-weight: 500;
+    padding: 30px;
+  }
 }
 
 h3 {
@@ -33,9 +39,6 @@ main p {
   font-size: clamp(1.2rem, 2vw, 1.6rem);
 }
 
-a { text-decoration: none; }
-
-
 .twos-things-container p {
   font-size: clamp(1.2rem, 4vw, 1.45rem);
 }
@@ -43,4 +46,3 @@ a { text-decoration: none; }
 li, p {
   font-size: clamp(1.0rem, 4vw, 1.25rem);
 }
-

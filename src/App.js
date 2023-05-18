@@ -1,13 +1,17 @@
-import { BrowserRouter } from "react-router-dom";
 import Main from "./scenes/Main.jsx";
 import "./components/style/App.scss";
+import '../src/components/style/GlowOnHover.scss';
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-      <BrowserRouter>
-        <Main />
-      </BrowserRouter>
+    <div>
+    <Routes>
+      <Route exact path='/' element={<Main/>}></Route>
+      {/* <Route path='*' element={<404/>}</Route> */}
+    </Routes>
+    </div>
   );
 }
 

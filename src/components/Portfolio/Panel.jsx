@@ -10,13 +10,10 @@ export default function Panel ({ data:{id, name, about, website, cover} }) {
   return (
     <Col key={id} md={10} lg={6} xl={4}>
       <Card className="portfolio-panel glow-on-hover ">
-        <figure>
           <a href={website} 
              target="_blank"
              rel="noreferrer"><Card.Img
             src={`${process.env.PUBLIC_URL}/ports/${cover}`} /></a>
-        </figure>
-
         <div className="content">
           <h3>{name}</h3>
           <p>{about}</p>

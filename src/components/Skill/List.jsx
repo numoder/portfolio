@@ -8,7 +8,7 @@ export default function Skill() {
     <section>
       <Container fluid id="skills" className="p-5">
         <Row>
-          <Col className="text-center">
+          <Col className="text-center headers">
             <h2 className="text-white">
               Particular Set of Skills
               <span>
@@ -20,7 +20,7 @@ export default function Skill() {
 
         <Row className="justify-content-center">
           <Col md={5} className="text-center">
-            <h2 className="text-white">Creative</h2>
+            <h2 className="headers2">Creative</h2>
             {skillCreative.map((element) => (
               <Panel
               key={element.id}
@@ -30,7 +30,7 @@ export default function Skill() {
           </Col>
 
           <Col md={5} className="text-center">
-            <h2 className="text-white">Dev</h2>
+            <h2 className="headers2">Dev</h2>
             {skillDev.map((element) => (
               <Panel
               key={element.id}

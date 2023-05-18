@@ -11,7 +11,7 @@ export default function TwoThings() {
         
         <Row className="justify-content-center g-5">
           <Col sm={12} md={6} lg={4}>
-            <p className="icon">🫂</p>
+            <img src={'./img/emojis/hugs.png'} className='icon' alt='2 people hugging'></img>
             <h3 className="text-center">Collaborative <span className="d-md-block">Catalyst</span></h3>
             <p className="text-center text-md-start">As a software developer, I am a great team player because I understand the importance of collaboration in achieving our common goals. I actively participate in team discussions, listen to other team members' opinions, and provide constructive feedback to help improve our team's performance! </p>
           </Col>
