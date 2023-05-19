@@ -1,27 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
 
 html { scroll-behavior: smooth; }
-/* body {
-  transition-duration: 1.3s;
-  transition-timing-function: cubic-bezier(.97,.15,.82,.75);
-  transition-delay: 0.15s;
-} */
 
 * { font-family: 'Mulish', sans-serif; }
 
-h1 {
-  font-size: clamp(5rem, 5vw, 7rem);
-  font-weight: 800;
-}
-
 h2 {
-  font-size: clamp(2.5rem, 4vw, 3.2rem);
+  font-size: clamp(3.5rem, 4vw, 3.2rem);
   font-weight: 700;
   & span {
     display: block;
-    font-size: 60%;
-    font-weight: 500;
-    padding: 30px;
+    font-weight: 400;
+    padding: 15px;
   }
 }
 

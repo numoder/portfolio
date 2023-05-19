@@ -1,0 +1,47 @@
+.button-effect {
+    display: block;
+    transform: scale(1.0);
+    transition: transform 0.23s ease-in-out;
+}
+
+.button-effect:hover {
+    transform: scale(1.13);
+    filter: drop-shadow(0 0 20px rgba(0, 5, 9, 0.919));
+    z-index: 999;
+}
+  
+/* Disable hover effects on mobile */
+@media (max-width: 768px) {
+    .button-effect:hover
+    {
+        transform: scale(1.0);
+        filter: none;
+    }
+}
+
+// Portfolio button
+
+#portfolio .button-effect {
+    color: rgba(183, 177, 177, 0.444);
+    display: block;
+    transform: scale(1.0);
+    transition: 0.6s ease-in-out;
+  }
+  
+  #portfolio .button-effect:hover {
+    color: rgba(255, 255, 255, 0.876);
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 20px rgba(0, 5, 9, 0.919));
+    z-index: 999;
+  }
+  
+  /* Disable hover effects on mobile */
+  @media (max-width: 768px) {
+    #portfolio .button-effect:hover
+    {
+        transform: scale(1.0);
+        filter: none;
+    }
+  }
+  
+  

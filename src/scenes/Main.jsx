@@ -6,6 +6,13 @@ import About from "../components/About/About.jsx";
 import Social from "../components/Social/List.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 
+// CSS
+import "../components/style/App.scss";
+import '../components/style/Intro.scss';
+import '../components/style/GlowOnHover.scss';
+import '../components/style/PortfolioCard.scss';
+
+
 export default function Main () {
 
   return (
@@ -22,5 +29,5 @@ export default function Main () {
         <Footer />
       </div>
     </>
-  )
-}
+  );
+};

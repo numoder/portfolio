@@ -1,6 +1,4 @@
 import Main from "./scenes/Main.jsx";
-import "./components/style/App.scss";
-import '../src/components/style/GlowOnHover.scss';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Routes, Route } from "react-router-dom";
 

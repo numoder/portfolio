@@ -9,7 +9,7 @@ export default function Panel ({ data:{id, name, about, website, cover} }) {
   
   return (
     <Col key={id} md={10} lg={6} xl={4}>
-      <Card className="portfolio-panel glow-on-hover ">
+      <Card className="portfolio-card glow-on-hover ">
           <a href={website} 
              target="_blank"
              rel="noreferrer"><Card.Img
