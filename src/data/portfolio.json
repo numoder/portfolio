@@ -5,6 +5,7 @@
     "about": "In the final weeks of Boca Code, we are assigned a final project to make a website. My website is a music reviewing site.",
     "website": "https://chromesthesia-world.web.app/",
     "cover": "port-1.webp",
+    "year": "2023",
     "skill": ["HTML", "CSS", "React.js", "JavaScript"]
   },
 
@@ -14,6 +15,7 @@
     "about": "On the fourth week of Boca Code, we would each make a coffee website. It would pull the coffee from an example api!",
     "website": "https://amurphy-coffee-react.web.app/",
     "cover": "port-2.webp",
+    "year": "2023",
     "skill": ["HTML", "JavaScript", "CSS"]
   },
 
@@ -23,6 +25,7 @@
     "about": "This is a mini profile page created using React.js and Bootstrap based on Rene Descartes' famous philosophical statement \"Ergo Cogito Sum\" which means \"I think, therefore I am.\"",
     "website": "https://jsohndata.github.io/cogito-ergo-sum/",
     "cover": "port-cogito.webp",
+    "year": "2023",
     "skill": ["React.js"]
   },
 
@@ -32,6 +35,7 @@
     "about": "Cozy Counter is a React.js app that showcases the useState() hook for BocaCode C-10. It creates a basic counter that can be incremented or decremented with user input, demonstrating how the hook manages state in functional components.",
     "website": "https://jsohndata.github.io/cozy-counter/",
     "cover": "port-cozycounter.webp",
+    "year": "2023",
     "skill": ["React.js"]
   },
 
@@ -41,6 +45,7 @@
     "about": "A quiz application designed for studying about the usage of useState() and props in React.js.",
     "website": "https://jsohndata.github.io/quizz-app",
     "cover": "port-quizz-app.webp",
+    "year": "2023",
     "skill": ["React.js"]
   }
 ]

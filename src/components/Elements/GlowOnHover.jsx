@@ -4,6 +4,6 @@ export default function GlowOnHover ({text}) {
     <button
       size="lg"
       type="button" 
-      className=" d-lg-inline m-auto glow-on-hover">{text}</button>
+      className="m-auto p-2 glow-on-hover">{text}</button>
   )
 }

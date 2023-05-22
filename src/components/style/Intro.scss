@@ -7,6 +7,8 @@ h1 {
 
 
 .headers {
+font-weight: 700;
+font-size: 75px;
 background-image: linear-gradient(
     72deg,
     var(--color-highlight-base2),
@@ -15,6 +17,7 @@ background-image: linear-gradient(
 background-clip: text;
 -webkit-text-fill-color: transparent;
 }
+
 
 intro p {
     color: red($color: #000000);

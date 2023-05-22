@@ -44,8 +44,13 @@ export default function Intro() {
             className="p-3">
               <h1 className="headers"><span>Hello, my name is</span> Anthony Murphy</h1>
               <p>I'm a software Engineer based in South Florida! I'm a fullstack developer but I especially love frontend work! When I'm not coding, I'm looking at the latest fashion shows and gaming.</p>
-              <HashLink to="/#portfolio" style={{"textDecoration":"none"}}><GlowOnHover 
-              text='See Portfolio'></GlowOnHover></HashLink>
+              <HashLink
+                  to="/#portfolio"
+                  className="button1">
+                  <GlowOnHover 
+                      text='See Portfolio'>
+                  </GlowOnHover>
+                </HashLink>
           </Col>
         </Row>
       </Container>

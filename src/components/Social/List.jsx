@@ -10,7 +10,7 @@ export default function List () {
         <Row>
           <Col className="text-center align-items-bottom">
             <h2 className="text-white">Social
-              <span><q>...make sure you're connected, The writing's on the wall.</q></span></h2>
+              <span>Feel free to connect with me!</span></h2>
           </Col>
         </Row>
         

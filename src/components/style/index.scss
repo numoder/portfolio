@@ -5,12 +5,12 @@ html { scroll-behavior: smooth; }
 * { font-family: 'Mulish', sans-serif; }
 
 h2 {
-  font-size: clamp(3.5rem, 4vw, 3.2rem);
+  font-size: clamp(3rem, 4vw, 3.2rem);
   font-weight: 700;
   & span {
     display: block;
-    font-weight: 400;
-    padding: 15px;
+    font-weight: 300;
+    padding: 30px 30px 75px;
   }
 }
 

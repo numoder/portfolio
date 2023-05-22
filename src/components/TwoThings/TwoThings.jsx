@@ -12,16 +12,15 @@ export default function TwoThings() {
         <Row className="justify-content-center g-5">
           <Col sm={12} md={6} lg={4}>
             <img src={'./img/emojis/hugs.png'} className='icon' alt='2 people hugging'></img>
-            <h3 className="text-center">Collaborative <span className="d-md-block">Catalyst</span></h3>
+            <h3 className="text-center">Synergetic <span className="d-md-block">Energy</span></h3>
             <p className="text-center text-md-start">As a software developer, I am a great team player because I understand the importance of collaboration in achieving our common goals. I actively participate in team discussions, listen to other team members' opinions, and provide constructive feedback to help improve our team's performance! </p>
           </Col>
 
           <Col sm={12} md={6} lg={4}>
-            <p className="icon">🖼️</p>
-            <h3 className="text-center">Diverse Skill Set<span className="d-md-block">+ Design</span></h3>
+            <img src={'./img/emojis/Diversity.png'} className='icon' alt='drawing in photoshop'></img>
+            <h3 className="text-center">Diverse Skill Set <span className="d-md-block">+ Design</span></h3>
             <p className="text-center text-md-start">With my background in software engineering and graphic design, I offer a unique skill set that combines technical expertise with artistic creativity. This allows me to approach UX/UI design from a holistic perspective, considering both the technical feasibility and visual appeal of the interfaces I create.</p>
           </Col>
-
         </Row>
       </Container>
     </main>

@@ -12,7 +12,7 @@ export default function List () {
         </Col>
       </Row>
 
-      <Row className="p-5 g-4 justify-content-center">
+      <Row className="p-5 justify-content-center button-effect">
         {
           data.map( 
             (element) => {

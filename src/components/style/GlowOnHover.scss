@@ -1,3 +1,17 @@
+@mixin hideTapHighlightColor() {
+  //Prevent highlight colour when element is tapped
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+@mixin hardwareAccel() {
+  //Improve performance on mobile/tablet devices
+  transform: translateZ(0);
+}
+
+@mixin improveAntiAlias() {
+  //Improve aliasing on mobile/tablet devices
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
 /* COOL BUTTON */
 
 .glow-on-hover {
@@ -9,6 +23,12 @@
     position: relative;
     z-index: 0;
     border-radius: 10px;
+
+
+}
+
+.button1 {
+    padding: 15px;
 }
 
 .glow-on-hover:before {
@@ -56,5 +76,39 @@
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
+}
+
+/* Hover */
+@keyframes hover {
+	50% {
+		transform: translateY(-3px);
+	}
+
+	100% {
+		transform: translateY(-6px);
+	}
+}
+
+.hover {
+    background: none;
+	transition-property: transform;
+    transition-duration: .5s;
+	display: inline-block;
+
+	@include hideTapHighlightColor();
+	@include hardwareAccel();
+	@include improveAntiAlias();
+
+	&:hover{
+        background: limegreen;
+        box-shadow: 0 0 0px #000000 !important;
+		transform: translateY(-6px);
+		animation-name: hover;
+		animation-duration: 1.5s;
+		animation-delay: 0.3s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
 }
 

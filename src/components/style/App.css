@@ -59,10 +59,7 @@
     text-align: center;
     color: var(--color-light);
   }
-  
-  #three-things .icon {
-    font-size: calc(3.5rem + 4vw);
-  }
+
   
   #three-things h3 {
     color: var(--color-highlight);
