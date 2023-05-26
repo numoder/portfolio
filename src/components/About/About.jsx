@@ -26,9 +26,9 @@ export default function About() {
         </Col>
       </Row>
 
-      <Row>        
+      <Row>
         <Col className="text-center">
-          <a href="https://www.linkedin.com/in/anthony-murphy04/"
+          <a href="https://www.linkedin.com/in/anthony-murphy04"
           target="_blank"
           rel="noreferrer">
             <GlowOnHover text={"Connect on Linkedin"} />
