@@ -10,7 +10,6 @@ import Footer from "../components/Footer/Footer.jsx";
 import "../components/style/App.scss";
 import '../components/style/Intro.scss';
 import '../components/style/GlowOnHover.scss';
-import '../components/style/PortfolioCard.scss';
 import '../components/style/ButtonEffect.scss';
 
 
