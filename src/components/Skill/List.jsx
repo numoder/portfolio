@@ -3,7 +3,7 @@ import skillDev from "../../data/skill-dev.json";
 import skillCreative from "../../data/skill-creative.json";
 import Panel from "./Panel.jsx";
 
-export default function Skill() {
+export default function SkillList() {
   return (
     <section>
       <Container fluid id="skills" className="p-5">
@@ -20,7 +20,7 @@ export default function Skill() {
 
         <Row className="justify-content-center">
           <Col md={5} className="text-center">
-            <h2 className="headers2">Creative</h2>
+            <h2 className="skills">Creative</h2>
             {skillCreative.map((element) => (
               <Panel
               key={element.id}
@@ -30,7 +30,7 @@ export default function Skill() {
           </Col>
 
           <Col md={5} className="text-center">
-            <h2 className="headers2">Dev</h2>
+            <h2 className="skills">Dev</h2>
             {skillDev.map((element) => (
               <Panel
               key={element.id}

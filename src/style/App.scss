@@ -1,58 +1,29 @@
+@use '../components/Intro/intro';
+@use '../components/Footer/footer';
+@use './Fonts.scss';
+
+
 :root {
-  --color-dark: #13203d;
+  --color-dark: #0a1b3f;
   --color-darkest: #0c1c2c;
   --color-dark-mid: #0d4c6b70;
 
   --color-light: #f4f5f6;
   --color-highlight: #5eedcf;
-  --color-highlight-neon: #ed2af1;
-  --color-highlight-base: #e0c705;
+  --color-highlight-neon: #f12a91;
+  --color-highlight-base: #c2ff33;
+  --color-main-bg: #e5f4e2;
+  --color-main-header: #d3e1da;
 
-  --color-highlight-neon2: #21d4fd;
+  --color-highlight-neon2: #fdb421;
   --color-highlight-base2: #b721ff;
 
-
-  --gradient-rainbow: linear-gradient(
-    45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
-  );
-
-  --gradient-cool: linear-gradient(
-    180deg,
-    rgba(192,0,255,1),
-    rgba(0,46,255,1),
-    rgba(0,255,243,1),
-    rgba(0,46,255,1),
-    rgba(192,0,255,1)
-    );
-
-  --border-radius: 15px;
+  --global-radius: 15px;
 }
 
 html,
 body {
-  background-color: var(--color-darkest);
-  scroll-behavior: smooth;
-  background: #000;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-
-  padding: 0;
-  margin: 0;
-  max-width: 100%;
-  overflow-x: hidden;
-  position: relative;
-  display: block;
+  background-color: var(--color-dark);
 }
 
 p {
@@ -61,33 +32,23 @@ p {
 
 /* Main */
 .top-scene-container,
-.bottom-scene-container {
-  background-image: url("../../../public/img/cyberpunk.png");
+.bottom-scene-container  {
+  background-color: var(--color-main-bg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  background-blend-mode: hue;
+  background-blend-mode:multiply;
 }
 
-main .about-col {
-  margin-top: 10vh;
+h1 h2 h3 {
+  font-family: 'BD Telegraph Medium-Normal';
 }
 
-
-.headers2 {
-  background-image: linear-gradient(
-    100deg,
-    var(--color-highlight-neon),
-    var(--color-highlight-base)
-  );
+main h1 {
+  background-image: linear-gradient(72deg, var(--color-highlight-neon), var(--color-highlight-base));
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-main h1 span {
-  color: var(--color-highlight);
-  display: block;
 }
 
 main p {
@@ -113,11 +74,11 @@ main p {
 }
 
 #two-things a.easter-egg {
-  cursor: url("../../../public/cursor/bulbasaur.cur"), auto;
+  cursor: url("../../public/cursor/bulbasaur.cur"), auto;
 }
 
 #two-things .easter-egg-2 {
-  cursor: url("../../../public/cursor/blastoise.cur"), auto;
+  cursor: url("../../public/cursor/blastoise.cur"), auto;
 }
 
 /* ABOUT */
@@ -140,20 +101,9 @@ main p {
   }
 }
 
-#social {
-  max-width: 550px;
-
-  & img {
-    width: 50px;
-    height: auto;
-    display: "inline-block";
-    filter: invert(1);
-  }
-}
-
 .border-style {
   border: 7px solid var(--color-dark-mid);
-  border-radius: var(--border-radius);
+  border-radius: var(--global-radius);
 }
 
 .button-style {
@@ -170,7 +120,7 @@ main p {
 .footer,
 .bottom-scene-container {
   background-color: #000000a4;
-  background-image: url("../../../public/img/cyberpunk3.png");
+  background-image: url("../../public/img/cyberpunk3.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

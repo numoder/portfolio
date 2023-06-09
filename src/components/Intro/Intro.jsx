@@ -1,5 +1,5 @@
-import { Container, Row, Col, Image, Button } from "../../util/Bootstrap.jsx";
-import GlowOnHover from "../Elements/GlowOnHover.jsx";
+import { Container, Row, Col, Image } from "../../util/Bootstrap.jsx";
+import GlowOnHover from "../Buttons/GlowOnHover.jsx";
 import { HashLink } from "react-router-hash-link";
 import { useState } from "react";
 
@@ -29,7 +29,7 @@ export default function Intro() {
             md={{ span: 5, offset: 0 }} 
             lg={{ span: 3, offset: 2 }} 
             xl={{ span: 3, offset: 1 }} 
-            className="p-1">
+            className="p-1 logo-trick">
             <Image src={`${process.env.PUBLIC_URL}/img/icons/${introArray[introImage]}`}
               alt="Anthony Murphy"
               className="easter-egg"

@@ -2,7 +2,7 @@ import { Container, Row, Col } from "../../util/Bootstrap.jsx";
 import Panel from "./Panel.jsx";
 import data from "../../data/social.json";
 
-export default function List () {
+export default function SocialList () {
 
   return (
     <section>

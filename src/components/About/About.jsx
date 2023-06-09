@@ -1,5 +1,5 @@
 import { Container, Row, Col, Image } from "../../util/Bootstrap.jsx";
-import GlowOnHover from "../Elements/GlowOnHover.jsx";
+import GlowOnHover from "../Buttons/GlowOnHover.jsx";
 
 export default function About() {
   return (

@@ -1,17 +1,22 @@
-import { Col, Card, Row } from "react-bootstrap";
+import { Col, Card } from "react-bootstrap";
 
-export default function Panel({ data: { id, name, about, website, cover } }) {
+export default function Panel ({ data:{id, name, about, website, cover} }) {
+  
   return (
-  <Card className="portfolio-card">
-      <Col key={id} md={12} lg={6} xl={4}>
+    <Col key={id} md={10} lg={6} xl={4}>
+      <Card className="portfolio-panel button-effect ">
+        <figure>
+          <a href={website} 
+             target="_blank"
+             rel="noreferrer"><Card.Img
+            src={`${process.env.PUBLIC_URL}/images/${cover}`} /></a>
+        </figure>
 
-          <Card.Img src={`${process.env.PUBLIC_URL}/ports/${cover}`}/>
-      <div className="content">
-        <h3>{name}</h3>
-        <p>{about}</p>
+        <div className="content">
+          <h3>{name}</h3>
+          <p>{about}</p>
         </div>
-
+      </Card>
     </Col>
-  </Card>
   );
 }
